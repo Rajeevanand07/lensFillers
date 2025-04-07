@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa"; // Import icons
 import "../../style/contact_style/FAQ.css";
 
