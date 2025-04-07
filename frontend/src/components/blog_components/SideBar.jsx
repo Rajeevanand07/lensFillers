@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "../../style/blog_style/Sidebar.css";
+import "../../style/blog_style/SideBar.css";
 import authorImg from "../../assets/blog-assets/author.png";
 import newsletterImg from "../../assets/blog-assets/h3.jpg";
 import blogData from "./BlogData";
