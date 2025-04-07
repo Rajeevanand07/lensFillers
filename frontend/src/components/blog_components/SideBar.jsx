@@ -5,7 +5,7 @@ import authorImg from "../../assets/blog-assets/author.png";
 import newsletterImg from "../../assets/blog-assets/h3.jpg";
 import blogData from "./BlogData";
 
-const Sidebar = ({ tags = [] }) => {
+const SideBar = ({ tags = [] }) => {
   const navigate = useNavigate();
 
   // Get the three most recent posts
@@ -88,4 +88,4 @@ const Sidebar = ({ tags = [] }) => {
   );
 };
 
-export default Sidebar;
+export default SideBar;

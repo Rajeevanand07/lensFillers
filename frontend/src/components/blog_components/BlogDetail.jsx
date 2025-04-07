@@ -2,10 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async"; // SEO Enhancement
 import blogData from "./BlogData";
-// import Sidebar from "./Sidebar";
 import "../../style/blog_style/BlogDetail.css";
 import { format } from "date-fns";
-import Sidebar from "./Sidebar";
+import SideBar from "./SideBar";
 
 const BlogDetail = () => {
   const { id } = useParams();
@@ -94,7 +93,7 @@ const BlogDetail = () => {
 
 
 
-      <Sidebar tags={blogPost.tags} />
+      <SideBar tags={blogPost.tags} />
 
       {/* Blog Content */}
       <article className="blog-content">
