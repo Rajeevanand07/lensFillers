@@ -17,7 +17,7 @@ const Adminlogin = () => {
       // Add withCredentials to ensure cookies are sent
       axios.defaults.withCredentials = true;
       
-      const response = await axios.post('http://localhost:3000/api/auth/login', { email, password }, { 
+      const response = await axios.post('https://lens-fillers.vercel.app/api/auth/login', { email, password }, { 
         withCredentials: true,
         headers: {
           'Content-Type': 'application/json'
@@ -44,9 +44,10 @@ const Adminlogin = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.post('http://localhost:3000/api/auth/logout', {}, { withCredentials: true });
+      await axios.post('https://lens-fillers.vercel.app/api/auth/logout', {}, { withCredentials: true });
       toast.success('Logged out successfully');
       navigate('/admin/login');
+      localStorage.removeItem('token'); //just recently added this line (by rajeev)
     } catch (error) {
       toast.error('Error logging out');
     }

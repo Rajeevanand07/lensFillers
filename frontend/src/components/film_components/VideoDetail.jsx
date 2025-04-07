@@ -11,7 +11,7 @@ export default function VideoDetail() {
     const fetchVideo = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/api/albums/${videoId}`
+          `https://lens-fillers.vercel.app/api/albums/${videoId}`
         );
         setVideo(response.data);
         console.log(response.data.weddingVideo);

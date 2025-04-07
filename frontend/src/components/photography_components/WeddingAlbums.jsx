@@ -9,7 +9,7 @@ const WeddingAlbums = () => {
   useEffect(() => {
     const fetchAlbums = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/albums");
+        const response = await axios.get("https://lens-fillers.vercel.app/api/albums");
         setAlbums(response.data);
       } catch (error) {
         console.error("Error fetching albums:", error);
