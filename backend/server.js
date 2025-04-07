@@ -15,7 +15,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: "https://lens-fillers.vercel.app/", // Adjust this to your frontend URL
+  origin: "https://lens-fillers.vercel.app", // Adjust this to your frontend URL
   credentials: true
 }));
 app.use(express.json());
