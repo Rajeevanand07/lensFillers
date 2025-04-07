@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'Cormorant Garamond'; ;
+  src: url('../assets/Cormorant_Garamond/CormorantGaramond-Regular.ttf');
+}
+.about_main {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: 'Cormorant Garamond';
+}
+.about_main_cover{
+  height: 100vh;
+  width: 100%;
+  /* background-color: red; */
+  clip-path: ellipse(80% 100% at 0% 0%);
+  object-fit: cover;
+  object-position: center;
+}
+.about_main_cover img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about_person{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_person_main{
+  height: 80vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 3fr 3fr;
+
+}
+.director{
+  font-size: 5vw;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+}
+.about_director{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+.about_director p{
+  font-size: 1.5vw;
+  font-weight: 300;
+  font-family: 'muli', serif;
+  text-align: center;
+}
+.we_are{
+  width: 70%;
+  
+}
+.we_are h1{
+  text-align: center;
+  font-size: 4vw;
+  text-transform: capitalize;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+}
+.about_all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'muli', serif;
+  font-weight: 300;
+}
+@media (max-width: 500px) {
+  .about_main{
+    height: 100vh;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+  }
+  .about_main_cover{
+    height: 50vh;
+    clip-path: ellipse(100% 100% at 0% 0%);
+  }
+  /* .about_main_cover img{
+    height: 72%;
+  } */
+  .about_person_main{
+    height: 50vh;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center;
+  }
+   .about_person{
+    height: 47vh;
+   }
+   .director{
+    font-size: 10vw;
+    text-align: center;
+   }
+   .about_director p {
+    font-size: 3.5vw;
+  }
+  .we_are h1{
+    font-size: 10vw;
+  }
+  .about_all{
+    font-size: 3.7vw;
+    text-align: center;
+  }
+}

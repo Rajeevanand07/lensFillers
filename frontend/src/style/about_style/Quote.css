@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('../assets/Cormorant_Garamond/CormorantGaramond-Regular.ttf');
+}
+@font-face {
+  font-family: 'Cormorant Garamond italic';
+  src: url('../assets/Cormorant_Garamond/CormorantGaramond-Italic.ttf');
+}
+.main_quote{
+  margin-top: 6vh;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* gap: 5vh; */
+  font-family: 'Cormorant Garamond', serif;
+}
+.main_quote p{
+  font-size: 1.3vw;
+  font-weight: 600;
+  font-family: 'muli', serif;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+.quote_cover{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.quote_cover h1{
+  font-size: 4vw;
+  text-align: center;
+  /* text-transform: capitalize; */
+  /* letter-spacing: 0.1em; */
+  font-weight: 500;
+  font-family: 'Cormorant Garamond italic', serif;
+}
+.quote_cover p{
+  margin-top: 5vh;
+  font-size: 1.2vw;
+  font-weight: 300;
+  font-family: 'muli', serif;
+  text-transform: lowercase;
+  text-align: center;
+}
+.quote_images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 50%; */
+  gap: 15px;
+}
+.quote_images_outer{
+
+  margin-top: 5vh;
+  height: 30vw;
+  width: 25vw;
+  object-fit: cover;
+  object-position: center;
+}
+.quote_images_outer img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 500px) {
+  .main_quote p{
+    font-size: 3vw;
+    margin-top: 3vh;
+  }
+  .quote_cover{
+    width: 90%;
+  }
+  .quote_cover h1{
+    font-size: 10vw;
+  }
+  .quote_images_outer{
+    height: 75vw;
+    width: 43vw;
+  }
+}

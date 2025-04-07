@@ -1,0 +1,58 @@
+.main_video_card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+}
+.play_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    z-index: 10;
+    padding: 1rem;
+    border-radius: 50%;
+}
+.video_outer_out{
+    position: relative;
+    height: 25vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.video_outer_out img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.video_couple_name{
+    margin-top: 1rem;
+}
+.video_couple_name h1{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Cormorant Garamond';
+}
+.v_description p{
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: 'Cormorant Garamond';
+    margin-top: 1rem;
+    text-align: center;
+}
+@media (max-width: 500px) {
+    .main_video_card{
+        width: 100%;
+    }
+}
+

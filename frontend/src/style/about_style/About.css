@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'muli';
+  src: url('../assets/7Auwp_0qiz-afTLGLQ.woff2') format('woff2');
+  font-display: swap;
+}
+.about_section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  background-color: #CDD4C9;
+}
+.full_page {
+  background-color: #CDD4C9;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow:hidden;
+  display: grid;
+  /* margin-top: -30vh; */
+  /* grid-template-rows: 1fr 1fr 1fr; */
+}
+/* .all_pipes{
+  height: 50vh;
+} */
+.pipe1, .pipe2, .pipe3, .pipe4 {
+  height: 70px;
+  position: absolute;
+  left: 50%;
+}
+.pipe4{
+  left: -100%;
+}
+.pipe3 {
+  height: 100px;
+  position: absolute;
+  right: 100%;
+
+}
+
+.pipe1 {
+  top: 20%;
+  width: 300vw;
+  transform: translate(-90%, 0) rotate(12deg);
+}
+
+.pipe2 {
+  top: 35%;
+  width: 200vw;
+  transform: translate(-90%, 0) rotate(-4deg);
+}
+.pipe3 {
+  top: 80%;
+  width: 100vw;
+  transform: translate(-90%, 0) rotate(-21deg);
+}
+.pipe4 {
+  top: 50%;
+  width: 200vw;
+  transform: translate(-130%, 0) ;
+}
+
+.flowing_text {
+  left: 100%;
+  top: 0;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+  padding: 0 20px;
+  font: 2em 'muli';
+  text-transform: capitalize;
+  will-change: transform;
+}
+
+.flowing_text h1 {
+  margin: 0;
+  display: inline-block;
+}
+
+.flowing_text_2 {
+  left: 30%;
+  top: 0;
+  white-space: nowrap;
+  transform: translateX(-80%);
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+  padding: 0 20px;
+  font: 3em 'muli';
+  text-transform: uppercase;
+  will-change: transform;
+}
+
+.flowing_text_2 h1 {
+  margin: 0;
+  display: inline-block;
+}
+@media (max-width: 500px) {
+  /* .full_page{
+    display: none;
+  } */
+   .full_page{
+    height: 42vh;
+   }
+   .flowing_text {
+    font-size: 5vw;
+   }
+   .pipe1 .flowing_text{
+    z-index: 3;
+   }
+   .pipe1 {
+    top: -4%;
+    width: 200vw;
+    transform: translate(-100%, 0) rotate(24deg);
+   }
+   .pipe2 {
+    top: 41%;
+    
+   }
+   .pipe3 {
+    top: 91%;
+    transform: translate(-140%, 0) rotate(-15deg);
+   }
+   .pipe4 {
+    top: 91%;
+    transform: translate(-140%, 0) rotate(-15deg);
+   }
+}

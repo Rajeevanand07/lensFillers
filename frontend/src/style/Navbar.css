@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'muli';
+  src: url('../assets/7Auwp_0qiz-afTLGLQ.woff2');
+}
+
+.main_navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #FBFAFA;
+  height: 9vh;
+  z-index: 12;
+  font-family: 'muli';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.main_navbar.visible {
+  transform: translateY(0%);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.main_navbar.hidden {
+  transform: translateY(-100%);
+  background-color: transparent;
+}
+
+.nav_logo {
+  width: 5rem;
+}
+.nav_logo h2{
+  position: relative;
+  z-index: 16;
+}
+
+
+.nav_links ul {
+  list-style: none;
+  gap: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_links ul li {
+  position: relative;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  cursor: pointer;
+}
+
+.nav_links ul li::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: #FBFAFA;
+  transition: width 0.3s ease;
+}
+
+.nav_links ul li:hover::after {
+  width: 100%;
+}
+
+/* Optional: Smooth transitions if not handled by GSAP */
+.main_navbar {
+  transition: background-color 0.3s ease, transform 0.5s ease;
+}
+.hamburger{
+  display: none;
+}
+.nav_side {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  z-index: 99;
+  padding: 2rem;
+  font-family: 'muli';
+  overflow: hidden;
+}
+.nav_side ul{
+  list-style: none;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.nav_side ul li{
+  font-size: 2rem;
+  letter-spacing: 0.2em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #FBFAFA;
+}
+.cross_nav{
+  color: #FBFAFA;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 1.5rem;
+}
+.Link{
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .hamburger{
+    display: block;
+  }
+  .nav_links{
+    display: none;
+  }
+  .nav_side{
+    width: 60%;
+  }
+}
+@media (max-width: 515px) {
+  .nav_side{
+    width: 80%;
+  }
+}
+@media (max-width: 430px) {
+  .nav_side{
+    width: 100%;
+  }
+  .nav_side ul li{
+    font-size: 1.7rem;
+
+  }
+
+}

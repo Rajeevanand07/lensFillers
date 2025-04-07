@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'Cormorant Garamond';
+    src: url('../assets/Cormorant_Garamond/CormorantGaramond-Regular.ttf');
+}
+
+.main_video_section {
+    height: 85vh;
+    background: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    font-family: 'Cormorant Garamond';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 100px;
+    flex-direction: column;
+}
+
+.vid_cont_v {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    object-position: center;
+    width: 100vw;
+    height: 85vh;
+    overflow: hidden;
+    outline: none;
+}
+
+.video_main {
+    width: 100vw;
+    height: 85vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.overlay {
+    overflow: hidden;
+    position: absolute;
+    width: 100vw;
+    height: 85vh;
+    background-color: #00000028;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video_cursor {
+    position: absolute;
+    pointer-events: none;
+    width: 7vw;
+    height: 7vw;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    z-index: 99;
+    cursor: none;
+    color: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2),
+        inset 0 0 15px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    gap: 8px;
+}
+
+.cursor-icon {
+    width: 28px;
+    height: 28px;
+    position: relative;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.play-icon::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #ffffff;
+}
+
+.pause-icon::before,
+.pause-icon::after {
+    content: '';
+    position: absolute;
+    top: 53%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 18px;
+    background-color: #ffffff;
+    border-radius: 2.5px;
+}
+
+.pause-icon::before {
+    left: 8px;
+}
+
+.pause-icon::after {
+    right: 8px;
+}
+
+.cursor-text {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(-1px);
+}
+
+.video_cursor::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: pulseRing 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+}
+
+.video_cursor::after {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+@keyframes pulseRing {
+    0% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+}
+
+.overlay:hover .video_cursor {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.overlay:hover .cursor-icon {
+    transform: scale(1.1);
+}
+
+.overlay:hover .cursor-text {
+    transform: translateY(-1px) scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .main_video_section {
+        height: 85vh;
+    }
+
+    .vid_cont_v,
+    .video_main,
+    .overlay {
+        height: 85vh;
+    }
+
+    .video_cursor {
+        width: 80px;
+        height: 80px;
+    }
+
+    .cursor-icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main_video_section {
+        height: 85vh;
+    }
+
+    .vid_cont_v,
+    .video_main,
+    .overlay {
+        height: 85vh;
+    }
+
+    .video_cursor {
+        width: 70px;
+        height: 70px;
+    }
+
+    .cursor-icon {
+        width: 20px;
+        height: 20px;
+    }
+}

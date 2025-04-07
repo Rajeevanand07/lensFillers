@@ -1,0 +1,94 @@
+@font-face {
+  font-family: 'muli';
+  src: url('./assets//7Auwp_0qiz-afTLGLQ.woff2');
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('./assets/fonts/CormorantGaramond-Regular.ttf');
+}
+
+.edit-album-container {
+  max-width: 800px;
+  margin: 15vh auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'muli';
+}
+
+.edit-album-title {
+  text-align: center;
+  font-family: 'Cormorant Garamond';
+  font-weight: 300;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit-form label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.edit-form input,
+.edit-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'muli';
+  transition: border-color 0.3s;
+}
+
+.edit-form input:focus,
+.edit-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-field {
+  flex: 1;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-family: 'muli';
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover:not(:disabled) {
+  opacity: 0.5;
+}
+
+.submit-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

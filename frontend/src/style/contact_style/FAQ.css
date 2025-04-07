@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+.faq2-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 10vh;
+  background-color: #CDD4C9; 
+}
+
+.faq2-title {
+  font-size: 80px;
+  letter-spacing: 1.1px;
+  font-family: "Cormorant Garamond", serif;
+  color: #2e2e2e;
+  font-weight: 500;
+  flex: 0.6;
+  padding-left: 8%;
+  text-align: left;
+}
+
+.faq2-content {
+  flex: 2;
+  background: #ffffff; 
+  padding: 50px;
+  margin-right: 2%;
+}
+
+.faq2-item {
+  padding: 17px 0;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.faq2-question {
+  font-size: 22px;
+  letter-spacing: 1.1px;
+  font-family: "Cormorant Garamond", serif;
+  color: #2e2e2e;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq2-icon {
+  margin-right: 15px;
+  font-size: 18px;
+  color: #afb7b8;
+}
+
+.faq2-answer {
+  font-size: 18px;
+  color: #4b4a4a;
+  margin-left: 30px;
+  font-weight: 500;
+  margin-top: 12px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.faq2-answer.show {
+  max-height: 150px;
+  opacity: 1;
+}
+
+.instagram-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  margin-left: 60px;  
+  margin-right: 60px; 
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.instagram-left {
+  flex: 1;
+  text-align: left;
+  color: #383838;
+}
+
+.instagram-middle {
+  flex: 1;
+  width: 50%;
+  height: 1px;
+  background-color: #a8a4a4;
+}
+
+.instagram-right {
+  flex: 1;
+  text-align: right;
+}
+
+.instagram-right a {
+  text-decoration: none;
+  color: #2c2c2c;
+  transition: color 0.3s ease;
+}
+
+.instagram-right a:hover {
+  color: #818181;
+}
+
+/* -------- RESPONSIVE DESIGN -------- */
+
+/* Tablets (768px and below) */
+@media (max-width: 1024px) {
+  .faq2-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .faq2-title {
+    font-size: 50px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .faq2-content {
+    width: 90%;
+    padding: 30px;
+    margin-right: 0;
+  }
+
+  .faq2-question {
+    font-size: 20px;
+  }
+
+  .faq2-answer {
+    font-size: 16px;
+  }
+
+  
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 768px) {
+  .faq2-container {
+    text-align: start;
+  }
+  
+  .faq2-title {
+    font-size: 40px;
+  }
+
+  .faq2-content {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .faq2-question {
+    font-size: 18px;
+  }
+
+  .faq2-answer {
+    font-size: 15px;
+  }
+
+
+}

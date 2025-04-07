@@ -1,0 +1,289 @@
+/* Testimonial Container */
+.testimonial-container {
+  background-color: #ffffff;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #4b5563;
+  position: relative;
+  min-height: 500px;
+  margin-bottom: 0;
+  margin-top: 0;
+  
+}
+
+@media screen and (min-width: 640px) {
+  .testimonial-container {
+    min-height: 600px;
+  }
+}
+
+/* Heading */
+.heading {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-weight: 100;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+
+@media screen and (min-width: 640px) {
+  .heading {
+    font-size: 2.25rem;
+  }
+}
+
+/* Paragraph */
+.paragraph {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  font-size: 0.875rem;
+}
+
+@media screen and (min-width: 640px) {
+  .paragraph {
+    font-size: 1rem;
+  }
+}
+
+/* Testimonial Slider */
+.testimonial-slider {
+  position: relative;
+  width: 100%;
+  max-width: 32rem;
+  padding: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 640px) {
+  .testimonial-slider {
+    max-width: 70rem;
+    min-height: 300px;
+  }
+}
+
+/* Previous Button */
+.prev-button {
+  position: absolute;
+  left: 0.5rem;
+  padding: 0.5rem;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  z-index: 20;
+}
+
+@media screen and (min-width: 640px) {
+  .prev-button {
+    left: 2.5rem;
+  }
+}
+
+.prev-button:hover {
+  background-color: #f3f4f6;
+}
+
+/* Chevron Icon */
+.chevron-icon {
+  font-size: 1.25rem;
+  color: #4b5563;
+}
+
+@media screen and (min-width: 640px) {
+  .chevron-icon {
+    font-size: 1.5rem;
+  }
+}
+
+/* Motion Div Styles */
+.motion-div {
+  position: absolute;
+  width: 20rem;
+  padding: 1.5rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 468px) {
+  .motion-div {
+    width: 18rem;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .motion-div {
+    width: 24rem;
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+}
+
+.motion-div.active {
+  z-index: 10;
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.motion-div.inactive {
+  z-index: 0;
+  filter: blur(8px);
+}
+
+/* Transition Styles */
+.motion-div-transition {
+  transition: opacity 0.8s ease, scale 0.8s ease;
+}
+
+/* Image Styles */
+.testimonial-image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999px;
+  object-fit: cover;
+  border: 4px solid #e5e7eb;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 640px) {
+  .testimonial-image {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+/* Quote Text Styles */
+.testimonial-text {
+  text-align: center;
+  color: #4b5563;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 468px) {
+  .testimonial-text {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .testimonial-text {
+    font-size: 1.125rem;
+  }
+}
+
+/* Quote Icon Styles */
+.testimonial-quote-icon {
+  display: inline-block;
+  color: #9ca3af;
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 640px) {
+  .testimonial-quote-icon {
+    font-size: 1.5rem;
+  }
+}
+
+/* Name Styles */
+.testimonial-name {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+@media screen and (min-width: 640px) {
+  .testimonial-name {
+    font-size: 1.25rem;
+  }
+}
+
+/* Designation Styles */
+.testimonial-designation {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+@media screen and (min-width: 640px) {
+  .testimonial-designation {
+    font-size: 1rem;
+  }
+}
+
+/* Next Button Styles */
+.next-button {
+  position: absolute;
+  right: 0.5rem;
+  padding: 0.5rem;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 9999px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  z-index: 20;
+}
+
+.next-button:hover {
+  background-color: #f3f4f6;
+}
+
+@media screen and (min-width: 640px) {
+  .next-button {
+    right: 2.5rem;
+  }
+}
+
+/* Dots Indicator Container Styles */
+.dots-container {
+  position: relative;
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 640px) {
+  .dots-container {
+    margin-top: 3rem;
+  }
+}
+
+/* Dot Styles */
+.t_dot {
+  position: relative;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #e5e7eb;
+  border-radius: 9999px;
+}
+
+@media(min-width: 480px) {
+  .t_dot {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+}
+
+.active-dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111827;
+  border-radius: 9999px;
+  transition: all 0.3s ease-in-out;
+}

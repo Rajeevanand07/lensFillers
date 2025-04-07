@@ -1,0 +1,254 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('./assets/fonts/CormorantGaramond-Regular.ttf');
+}
+@font-face {
+  font-family: 'muli';
+  src: url('./assets//7Auwp_0qiz-afTLGLQ.woff2');
+}
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #0056b3;
+  --light-gray: #f9f9f9;
+  --dark-gray: #333;
+  --text-gray: #666;
+}
+
+body {
+  background-color: var(--light-gray);
+  margin: 0;
+}
+
+.admin-panel {
+  margin-top: 10vh;
+  padding: 40px 3%;
+  font-family: 'Cormorant Garamond', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+.header h2{
+  font-weight: 300;
+
+}
+
+.header_top h2{
+  font-family: 'Cormorant Garamond';
+  color: var(--dark-gray);
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+.header_top h4{
+  font-size: 1.5rem;
+  font-family: 'Cormorant Garamond';
+  color: var(--dark-gray);
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.header-buttons{
+  display: flex;
+  gap: 1rem;
+}
+.upload-btn {
+  font-family: 'Cormorant Garamond';
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.664);
+  border: 1px solid rgba(0, 0, 0, 0.664);
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: 600;
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: 'muli';
+  transition: all 0.3s ease;
+}
+.logout-btn{
+  font-family: 'Cormorant Garamond';
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.664);
+  border: 1px solid rgba(0, 0, 0, 0.664);
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: 600;
+  background-color: transparent;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: 'muli';
+  transition: all 0.3s ease;
+}
+
+.upload-btn:hover {
+  opacity: 0.5;
+}
+.logout-btn:hover {
+  opacity: 0.5;
+}
+.no_ablum_text{
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.album-grid-a {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px; */
+  /* height: 100vh;  */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.album-card_container-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  width: 30%;
+  /* gap: 15px; */
+  font-family: 'Cormorant Garamond';
+}
+
+.album-card-frame {
+  width: 27vw;
+  height: 37vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.album-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.album-card-info {
+  padding: 10px 15px;
+  text-align: center;
+  max-width: 80%;
+}
+
+.album-card-couple {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.album-card-description {
+  color: rgb(80, 78, 78);
+  line-height: 1.4;
+  letter-spacing: 0em;
+  padding-inline: 10px;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Cormorant Garamond';
+  font-weight: 200;
+  font-style: normal;
+}
+
+.menu-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.menu-container:hover{
+  background-color: #F9F9F9;
+  
+}
+.menu-button {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--light-gray);
+  transition: all 0.3s ease;
+  height: 100%;
+  width: 100%;
+}
+.menu-container:hover .menu-button{
+  color: #333;
+}
+
+.menu-dropdown {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.menu-dropdown button {
+  background-color: transparent;
+  border: none;
+  padding: 12px 20px;
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  color: var(--dark-gray);
+  cursor: pointer;
+}
+
+.menu-dropdown button:hover {
+  background-color: var(--light-gray);
+}
+
+
+@media (max-width: 480px) {
+  .header_top{
+    text-align: center;
+  }
+  .album-card-frame {
+    width: 100%;
+    max-width: 350px;
+    height: 250px;
+  }
+
+  .album-card-description {
+    padding-inline: 5px;
+  }
+  .album-card_container{
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .upload-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .album-card-description {
+    padding-inline: 20px;
+  }
+}

@@ -1,0 +1,106 @@
+/* Elegant and Modern AdminLogin.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.adminLogin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  height: 100vh;
+}
+
+.adminLogin-form{
+  padding: 20px;
+  background-color: #f8fafc;
+}
+
+.adminLogin-card {
+  background-color: #f8fafc;
+  padding: 10px;
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  max-width: 600px;
+  width: 100%;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.adminLogin-title {
+  font-size: 2.5rem;
+  color: #1e293b;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.adminLogin-label {
+  font-size: 1rem;
+  color: #334155;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.adminLogin-input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 1px solid #94a3b8;
+  /* background: #f8fafc; */
+  color: #1e293b;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.adminLogin-input:focus {
+  border-color: #3b82f6;
+}
+
+.adminLogin-button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(145deg, #3b82f6, #1e40af);
+  color: #ffffff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.adminLogin-button:hover {
+  background: linear-gradient(145deg, #1e40af, #3b82f6);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .adminLogin-card {
+    padding: 30px;
+  }
+
+  .adminLogin-title {
+    font-size: 2rem;
+  }
+
+  .adminLogin-button {
+    font-size: 1rem;
+  }
+}

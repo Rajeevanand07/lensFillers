@@ -1,0 +1,179 @@
+
+@font-face {
+    font-family: 'FBDidotS';
+    src: url('../assets/FBDidotS-Light.woff');
+}
+.main_royal_section{
+    height: 100vh;
+    position: relative;
+    background-color: #F4F0ED;
+    overflow: hidden;
+}
+.royal_heading{
+    /* background-color: red; */
+    position: absolute;
+    margin-top: 7.5vw;
+    width: 100%;
+    /* z-index: 8; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 2vw; */
+    color: #000000;
+    font-family: 'FBDidotS';
+
+}
+.royal_heading .upper_r_h{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 7.5vw;
+    gap: 0.4em;
+    z-index: 8;
+    overflow: hidden;
+    height: 15vw;
+    
+}
+.royal_heading .lower_r_h{
+    height: 10vw;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 5.8vw;
+    text-align: center;
+    z-index: 11;        
+}
+.u_text_l, .u_text_r{
+    font-size: 13vw;
+}
+.l_text_l, .l_text_r{
+    font-size: 10.2vw;
+
+}
+.u_text_l span{
+    display: inline-block;
+}
+.l_text_l span{
+    display: inline-block;
+}
+.u_text_r span{
+    display: inline-block;
+}
+.l_text_r span{
+    display: inline-block;
+}
+.u_text_l, .l_text_l{
+    color: #FFFFFF;
+}
+
+
+.royal_content{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+.royal_image{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    overflow: hidden;
+    object-position: center;
+
+}
+.royal_image img{
+    position: absolute;
+    height: 100%;
+    width: 45%;
+    object-fit: cover;
+    object-position: center;
+}
+.img_c2{
+    position: absolute;
+    z-index: 10;
+}
+.royal_side_content{
+    height: 100vh;
+    width: 45%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+.royal_side_content .royal_hands{
+    height: 100px;
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+    z-index: 15;
+}
+.royal_side_content .royal_hands img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.royal_side_content .upper_royal{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 13vw;
+}
+.royal_side_content .lower_royal{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.royal_stroy_l{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'muli';
+    text-transform: uppercase;
+    font-size: 1.5vw;
+}
+.royal_stroy_l h5, .royal_stroy_r h5{
+    width: 55%;
+}
+.royal_stroy_r{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.5vw;
+    margin-bottom: 60px;
+
+}
+@media (max-width: 425px) {
+    .royal_side_content .upper_royal{
+        justify-content: center;
+    }
+    .royal_side_content .lower_royal{
+        gap: 3vw;
+        margin-top: -3vw;
+    }
+    .royal_stroy_l{
+        font-size: 4vw;
+        margin-top: 0;
+    }
+    .royal_stroy_r{
+        font-size: 4.5vw;
+        
+
+    }
+}

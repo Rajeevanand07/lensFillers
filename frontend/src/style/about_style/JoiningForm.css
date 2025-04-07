@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+body {
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Cormorant Garamond", serif;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-container {
+  display: flex;
+  /* margin-top: 10vh; */
+  justify-content: center;
+  height: 150vh;
+  width: 100%;
+  margin-bottom: 2vh;
+  padding-bottom: 50px;
+  /* margin-bottom: 100px; */
+  /* border: 1px solid rgb(32, 32, 32); */
+  /* background-color: #EDEADF; */
+  /* background-color: #CDD4C9; */
+  /* background-color: #e6d5ca; */
+}
+
+.lableinfo{
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  margin-bottom: 50px;
+  color: #202020;
+  font-style: italic;
+  font-weight: 250;
+ }
+/* .contact-image {
+  flex: 1;
+  background-image: url("../src/assets/wedding-6873668_1280.jpg"); 
+  background-size: cover;
+  background-position: center;
+  height: 155vh;
+  } */
+  
+  form{
+  background-color: #ffffff;
+  /* box-shadow: 0px 0px 9px #ffffff; */
+  /* border: 1px solid rgb(112, 112, 112); */
+  padding: 70px 90px 38px;
+}
+
+.contact-form {
+  /* flex: 1; */
+  /* padding: 10%; */
+  /* margin: 18%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #2e2e2e;
+  font-weight: 400;
+  /* margin-top: 300px; */
+  width: 60%;
+  
+}
+
+.contact-heading{
+  margin-top: 10vh;
+  font-size: 50px;
+  font-weight: 100;
+  color: rgb(97, 94, 94);
+  /* margin-bottom: 35px ; */
+  letter-spacing: 1.2px;
+  /* padding: 30px; */
+}
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  color: rgb(99, 97, 97);
+  margin-bottom: 12px;  
+  font-weight: 200;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  
+  text-align: start;
+  margin-top: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  font-family: "Cormorant Garamond", serif;
+  width: 100%;
+  padding: 1px 1px;
+  font-size: 15px;
+  color: rgb(75, 73, 73);
+  font-weight: 500;
+  border: none;
+  border-bottom: 1px solid #474747;
+  background: transparent;
+  outline: none;
+  /* text-align: center; */
+}
+
+.form-group select {
+  appearance: none;
+  cursor: pointer;
+}
+
+.form-group-grouped {
+  display: flex;
+  gap: 0.1px; /* Spacing between the two fields */
+  justify-content: space-between;
+}
+
+.half-width {
+  width: 48%;
+}
+
+.half-width input {
+  width: 100%;
+  padding: 5px 0; /* Adjust padding to control spacing */
+  margin: 0;
+}
+
+.joining_btn {
+  width: 25%;
+  padding: 16px;
+  background: transparent;
+  margin-top: 20px;
+  /* border: 1px solid #242424; */
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  background-color: #BAA190;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: none;
+}
+
+.joining_btn:hover {
+  background-color: #caa68d;
+  color: white;
+  /* border-color:white; */
+}
+
+
+
+@media (max-width: 1024px) {
+  .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+  
+  form {
+    padding: 50px;
+    width: 100%;
+  }
+  
+  .contact-form {
+    margin: 5%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-heading {
+    font-size: 40px;
+  }
+
+  form {
+    padding: 40px;
+    width: 90%;
+  }
+
+  .half-width {
+    width: 100%;
+  }
+
+  .form-group-grouped {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .join_team_upper h1{
+    font-size: 8vw;
+  }
+  .team_req{
+    font-size: 4vw;
+  }
+  .joining_btn {
+    width: 54%;
+  }
+  .contact-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-heading {
+    font-size: 30px;
+  }
+
+  form {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .contact-form {
+    /* margin: 2%; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-group input, .form-group select, .form-group textarea {
+    font-size: 14px;
+  }
+}

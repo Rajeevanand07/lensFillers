@@ -1,0 +1,312 @@
+@font-face {
+    font-family: 'muli';
+    src: url('../assets/7Auwp_0qiz-afTLGLQ.woff2');
+}
+@font-face {
+    font-family: 'cormorant';
+    src: url('../assets/Cormorant_Garamond/CormorantGaramond-Regular.ttf');
+}
+.dream_wedding{
+    padding-top: 10%;
+    height: 100vh;
+    width: 100%;
+    /* background-color: #F0E9E0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wedding_wrapper{
+    height:100vh;
+    width: 87%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.list_names_container_dw{
+    /* background-color: #c77100; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap:     2em; */
+}
+.wedding_heading{
+    display: flex;
+    align-items: center;
+}
+.wedding_heading h5{
+    font-family: 'muli';
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    margin-right: -25px;
+    font-weight: 400;
+}
+.img_cont_dw{
+    height: 3rem;
+    width: 10rem;
+    object-fit: cover;
+}
+.img_cont_dw img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.list_names_dw{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    /* gap: 2em; */
+}
+.names_dw{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    height: 100%;
+    padding: 1rem 0;
+}
+.names_dw h2,
+.names_dw span img {
+  opacity: 0.5;
+  transition: opacity 1s ease;
+}
+
+.names_dw.active_name h2,
+.names_dw.active_name span img {
+  opacity: 1;
+}
+
+.names_dw h2{
+    font-family: 'cormorant';
+    font-size: 2.5rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #9a9a9aa2;
+
+}
+.names_dw span{
+    height: 6rem;
+    width: 6rem;
+    object-fit: cover;
+    margin: -20px;
+}
+.names_dw span img{
+    opacity: 0.3;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.active_name h2{
+    color: #555751;
+}
+.active_name span img{
+    opacity: 1;
+}
+
+.list_images_container_dw{
+    /* padding-left: 1vw; */
+    height: 100vh;
+    width: 100%;
+    /* right: 5%; */
+    position: relative;
+    /* overflow: hidden; */
+    /* background-color: red; */
+}
+.images_dw{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* position: relative; */
+    display: block;
+}
+.images_dw img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.list_image_wrapper_odd_1{
+    height: 19vw;
+    width: 13vw;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 35%;
+    /* left: 10%; */
+}
+.list_image_wrapper_odd_2{
+    height: 12vw;
+    width: 21.5vw;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 0;
+    left: 27%;
+}
+.list_image_wrapper_odd_3{
+    height: 37.5vw;
+    width: 35.3vw;
+    /* border: 1px solid black; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.list_image_wrapper_even_1{
+    height: 19vw;
+    width: 13vw;
+    /* border: 1px solid black; */
+    position: absolute;
+    bottom: 0;
+    /* left: 10%; */
+}
+.list_image_wrapper_even_2{
+    height: 27.5vw;
+    width: 21.5vw;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 7%;
+    left: 27%;
+}
+.list_image_wrapper_even_3{
+    height: 15.3vw;
+    width: 35.3vw;
+    /* border: 1px solid black; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+@media (max-width: 860px) {
+    .wedding_wrapper{
+        display: flex;
+        flex-direction:column-reverse;
+        height: 100vh;
+        width: 100vw;
+    }
+    .list_images_container_dw{
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .list_names_container_dw{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        height: 40vh;
+    }
+    .list_names_dw{
+        display: flex;
+        gap: 0;
+    }
+    .names_dw {
+        padding: 0;
+        /* height: 18%; */
+    }
+    .names_dw h2{
+        font-size: 1.5rem;
+    }
+    .names_dw span{
+        height: 3rem;
+        width: 4rem;
+    }
+    .images_dw{
+        /* display: none; */
+        width: 90%;
+    }
+    .list_image_wrapper_odd_1{
+        height: 25vw;
+        width: 19vw;
+
+    }
+    .list_image_wrapper_odd_2{
+        height: 14vw;
+        width: 26.5vw;
+
+    }
+    .list_image_wrapper_odd_3{
+        height: 37.5vw;
+    width: 35.3vw;
+
+    }
+    .list_image_wrapper_even_1{
+        height: 25vw;
+        width: 19vw;
+    }
+    .list_image_wrapper_even_2{
+        height: 32.5vw;
+        width: 26.5vw;
+    }
+    .list_image_wrapper_even_3{
+        height: 15.3vw;
+        width: 35.3vw;
+    }
+}
+@media (max-width: 460px) {
+    /* .list_images_container_dw{
+        display: none;
+        visibility: hidden;
+    } */
+    .wedding_wrapper{
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        gap: 1rem;
+    }
+    .dream_wedding{
+        height: 100vh;
+    }
+    .list_names_container_dw{
+        flex-direction: column;
+        width: 80%;
+    }
+    .list_names_dw{
+        gap: 1rem;
+    }
+    .img_cont_dw{
+        height: 2rem;
+    width: 6rem;
+    }
+    .wedding_heading h5{
+        font-size: 0.5rem;
+        margin-right: -12px;
+    }
+    .names_dw h2{
+        font-size: 1rem;
+    }
+    .names_dw span{
+        height: 2rem;
+        width: 2rem;
+        /* padding: 0 20px; */
+        margin: -10px -10px;
+    }
+    .list_image_wrapper_odd_1{
+        height: 30vw;
+        width: 25vw;
+
+    }
+    .list_image_wrapper_odd_2{
+        height: 18vw;
+        width: 30.5vw;
+        left: 34%;
+
+    }
+    .list_image_wrapper_odd_3{
+        height: 37.5vw;
+    width: 35.3vw;
+
+    }
+    .list_image_wrapper_even_1{
+        height: 30vw;
+        width: 25vw;
+    }
+    .list_image_wrapper_even_2{
+        height: 36.5vw;
+        width: 30.5vw;
+        left: 34%;
+    }
+    .list_image_wrapper_even_3{
+        height: 15.3vw;
+        width: 35.3vw;
+    }
+}

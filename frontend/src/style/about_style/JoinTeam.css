@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('../assets/Cormorant_Garamond/CormorantGaramond-Regular.ttf');
+}
+.join_team{
+  height: 100%;
+  margin-top: 10vh;
+  font-family: 'Cormorant Garamond', serif;
+}
+.join_team_upper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 2rem;
+}
+.join_team_upper h1{
+  font-size: 4vw;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+.team_req{
+  margin-top: 3vh;
+  width: 70%;
+  font-size: 1.3vw;
+  font-weight: 300;
+  font-family: 'muli', serif;
+  text-align: center;
+}

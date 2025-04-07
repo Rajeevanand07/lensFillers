@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('../assets/Cormorant_Garamond/CormorantGaramond-Regular.ttf');
+}
+@font-face {
+  font-family: 'Cormorant Garamond Italic';
+  src: url('../assets/Cormorant_Garamond/CormorantGaramond-Italic.ttf');
+}
+@font-face {
+  font-family: 'muli';
+  src: url('../assets/NGS6v5_NC0k9P9H2TbE.woff2');
+}
+.main_photography_team{
+  /* width: 100%; */
+  height: 120vh;
+  background-color: #F4F0ED;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Cormorant Garamond';
+  padding-bottom: 100px;
+  color: #4D504A;
+}
+.pt_upper{
+  padding-top: 10vh;
+  width: 100%;
+  height: 30%;
+  background-color: #F4F0ED;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pt_upper h2{
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 2.1rem;
+  letter-spacing: 0.5rem;
+}
+.pt_upper p{
+  font-size: 1.3rem;
+  font-family: 'Cormorant Garamond Italic';
+  margin-top: 5px;
+}
+.pt_lower{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+}
+.pt_card{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pt_card .outer_layout{
+  height: 85%;
+  width: 90%;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.pt_card .outer_layout .pt_img_outer{
+  height: 80%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  /* border-radius: 8px; */
+}
+.pt_card .outer_layout .pt_img_outer .main_image{
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  object-fit: cover;
+  transform-origin: center center;
+  margin: -5px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.pt_card:nth-child(2),
+.pt_card:nth-child(4) {
+  align-items: flex-end;
+}
+.outer_layout h6{
+  margin-top: 2rem;
+  font-weight: 100;
+  font-size: 1.2rem;
+  font-family: 'Cormorant Garamond Italic';
+}
+.outer_layout h4{
+  font-weight: 100;
+  font-size: 1.4rem;
+  text-transform: uppercase; 
+  margin-top: 5px;
+  letter-spacing: 0.1rem;
+}
+.outer_layout .pt_refrences{
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+}
+.outer_layout .pt_refrences a{
+  text-decoration: none;
+  border-right: 1px solid #4D504A;
+  padding: 0 0.5rem;
+  color: #4d504aa6;
+  font-family: 'muli';
+  font-size: 0.8rem;
+  transition: opacity 0.3s ease;
+}
+
+.outer_layout .pt_refrences a:hover {
+  opacity: 0.6;
+}
+
+.outer_layout .pt_refrences a:last-child {
+  border-right: none;
+}
+.pt_img_outer .signature{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 50%;
+  width: 70%;
+  object-fit: cover;
+  z-index: 9;
+  bottom: 0;
+  right: 8%;
+  transform: rotate(-10deg);
+}
+
+@media screen and (max-width: 768px) {
+  .main_photography_team {
+    height: auto;
+    padding-bottom: 4rem;
+  }
+  
+  .pt_lower {
+    flex-wrap: wrap; /* Add this to allow wrapping of cards */
+  }
+  
+  .pt_card {
+    width: 50%; /* Show 2 cards per row on tablet */
+    height: 500px;
+    margin-bottom: 2rem;
+  }
+
+  .pt_upper h2 {
+    font-size: 1.8rem;
+  }
+
+  .pt_upper p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pt_card {
+    width: 100%; /* Show 1 card per row on mobile */
+    height: 400px;
+  }
+
+  .pt_upper h2 {
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .pt_upper p {
+    font-size: 1rem;
+  }
+}
