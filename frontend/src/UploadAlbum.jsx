@@ -44,7 +44,7 @@ const UploadAlbum = () => {
 
     try {
       const response = await axios.post(
-        "https://lens-fillers.vercel.app/api/albums",
+        "https://lensfillers.onrender.com/api/albums",
         formData,
         { headers: { "Content-Type": "multipart/form-data" }, withCredentials: true }
       );
