@@ -22,8 +22,8 @@ const WeddingAlbums = () => {
     <div className="wedding-event-albums-container">
       <h1 className="wedding-title">Wedding Albums</h1>
       <div className="wedding-album-grid">
-        {albums.map((album) => (
-          <AlbumCard key={`wedding-${album._id}`} album={album} />
+        {albums?.map((album) => (
+          <AlbumCard key={`wedding-${album?._id}`} album={album} />
         ))}
       </div>
     </div>
