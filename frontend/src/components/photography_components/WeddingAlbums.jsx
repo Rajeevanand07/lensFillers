@@ -11,6 +11,7 @@ const WeddingAlbums = () => {
       try {
         const response = await axios.get("https://lens-fillers.vercel.app/api/albums");
         setAlbums(response.data.albums);
+        console.log(response.data.albums);
       } catch (error) {
         console.error("Error fetching albums:", error);
       }
