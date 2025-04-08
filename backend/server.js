@@ -7,6 +7,7 @@ import cookieParser from "cookie-parser";
 import connectDB from "./config/db.js";
 import contactRoutes from "./routes/contactRoutes.js";
 import joinRoutes from "./routes/joinRoutes.js";
+import path from "path";
 
 // Load environment variables
 dotenv.config();

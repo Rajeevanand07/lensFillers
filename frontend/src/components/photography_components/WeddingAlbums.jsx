@@ -10,7 +10,7 @@ const WeddingAlbums = () => {
     const fetchAlbums = async () => {
       try {
         console.log("we are fetching photos")
-        const response = await axios.get("https://lens-fillers.vercel.app/api/albums");
+        const response = await axios.get("https://lensfillers.onrender.com/api/albums");
         console.log(response.data)
         console.log(response)
         setAlbums(response.data.albums);
