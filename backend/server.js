@@ -35,3 +35,6 @@ app.listen(3000, () =>{
   connectDB();
   console.log("Server running on port 3000")
 });
+
+
+// "build":"npm install && npm install --prefix ../frontend && npm run build --prefix ../frontend"
