@@ -10,7 +10,7 @@ const WeddingAlbums = () => {
     const fetchAlbums = async () => {
       try {
         const response = await axios.get("https://lens-fillers.vercel.app/api/albums");
-        setAlbums(response.data);
+        setAlbums(response.data.albums);
       } catch (error) {
         console.error("Error fetching albums:", error);
       }
@@ -22,8 +22,8 @@ const WeddingAlbums = () => {
     <div className="wedding-event-albums-container">
       <h1 className="wedding-title">Wedding Albums</h1>
       <div className="wedding-album-grid">
-        {albums?.map((album) => (
-          <AlbumCard key={`wedding-${album?._id}`} album={album} />
+        {albums.map((album) => (
+          <AlbumCard key={`wedding-${album._id}`} album={album} />
         ))}
       </div>
     </div>
