@@ -105,7 +105,7 @@ const AdminPanel = () => {
         {albums.length === 0 ? (
           <p>No albums found</p>
         ) : (
-          albums.map((album, index) => (
+         albums && albums?.map((album, index) => (
             <div key={album._id} className="album-card_container-a">
               <div className="album-card-frame">
                 <img
