@@ -102,7 +102,7 @@ export const createAlbum = async (req, res) => {
 export const getAlbums = async (req, res) => {
   try {
     const albums = await Album.find();
-    res.status(200).json(albums);
+    res.status(200).json({message:"heloo",albums});
   } catch (error) {
     console.error("Error fetching albums:", error);
     res.status(500).json({ message: error.message });
