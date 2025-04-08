@@ -10,7 +10,7 @@ export default function VideoAlbums() {
     const fetchVideoAlbums = async () => {
       try {
         const response = await axios.get("https://lensfillers.onrender.com/api/albums");
-        setVideoAlbums(response.data);
+        setVideoAlbums(response.data.albums);
         console.log(response.data);
         
       } catch (error) {

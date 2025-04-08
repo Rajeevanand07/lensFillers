@@ -13,7 +13,7 @@ export default function VideoDetail() {
         const response = await axios.get(
           `https://lensfillers.onrender.com/api/albums/${videoId}`
         );
-        setVideo(response.data.albums);
+        setVideo(response.data);
         console.log(response.data.weddingVideo);
       } catch (error) {
         console.error("Error fetching video:", error);
