@@ -42,7 +42,7 @@ export const registerController = async (req, res) => {
 export const loginController = async (req, res) => {
   try {
     const { email, password } = req.body;
-
+    console.log(email, password);
     // Check if email and password are provided
     if (!email || !password) {
       return res.status(400).json({ message: "Email and password are required" });
@@ -74,7 +74,6 @@ export const loginController = async (req, res) => {
       sameSite: "Strict", // Prevent CSRF attacks
       maxAge: 24 * 60 * 60 * 1000, // 1 day
       path: '/', // Ensure cookie is available across all paths
-      domain: 'localhost' // Specify domain
     });
 
     // Send response with token
