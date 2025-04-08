@@ -67,13 +67,21 @@ export const loginController = async (req, res) => {
       expiresIn: "1d", // Token valid for 1 day
     });
 
-    // Set token in cookies
+    // // Set token in cookies
+    // res.cookie("token", token, {
+    //   httpOnly: true, // Prevent access from JavaScript (secure)
+    //   secure: process.env.NODE_ENV === "production", // Enable only in production
+    //   sameSite: "Strict", // Prevent CSRF attacks
+    //   maxAge: 24 * 60 * 60 * 1000, // 1 day
+    //   path: '/', // Ensure cookie is available across all paths
+    // });
+
     res.cookie("token", token, {
-      httpOnly: true, // Prevent access from JavaScript (secure)
-      secure: process.env.NODE_ENV === "production", // Enable only in production
-      sameSite: "Strict", // Prevent CSRF attacks
-      maxAge: 24 * 60 * 60 * 1000, // 1 day
-      path: '/', // Ensure cookie is available across all paths
+      httpOnly: true,
+      secure: true,
+      sameSite: "None",
+      maxAge: 24 * 60 * 60 * 1000,
+      path: "/",
     });
 
     // Send response with token
