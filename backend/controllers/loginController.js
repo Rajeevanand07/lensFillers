@@ -67,6 +67,8 @@ export const loginController = async (req, res) => {
       expiresIn: "1d", // Token valid for 1 day
     });
 
+    console.log(token)
+
     // // Set token in cookies
     // res.cookie("token", token, {
     //   httpOnly: true, // Prevent access from JavaScript (secure)

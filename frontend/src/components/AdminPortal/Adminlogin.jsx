@@ -29,7 +29,7 @@ const Adminlogin = () => {
         
         // Store token in localStorage
         localStorage.setItem('token', response.data.token);
-        
+        console.log(response.data.token)
         // Wait for a moment to ensure everything is set
         await new Promise(resolve => setTimeout(resolve, 500));
         
