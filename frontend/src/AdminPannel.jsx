@@ -28,6 +28,7 @@ const AdminPanel = () => {
   const deleteAlbum = async (id) => {
     if (window.confirm("Are you sure you want to delete this album?")) {
       try {
+        axios.defaults.withCredentials = true;
         const response = await axios.delete(
           `https://lensfillers.onrender.com/api/albums/${id}`
         );
