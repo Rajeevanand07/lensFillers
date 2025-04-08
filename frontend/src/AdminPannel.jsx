@@ -58,7 +58,15 @@ const AdminPanel = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.post('https://lensfillers.onrender.com/api/auth/logout', {}, { withCredentials: true });
+      const token = localStorage.getItem('token');
+      await axios.post('https://lensfillers.onrender.com/api/auth/logout',       {},
+        {
+          withCredentials: true,          // still send cookies if any
+          headers: {
+            Authorization: `Bearer ${token}`,  // manually send JWT
+          },
+        }
+      );
       toast.success('Logged out successfully');
       localStorage.removeItem('token');
       navigate('/admin/login');
