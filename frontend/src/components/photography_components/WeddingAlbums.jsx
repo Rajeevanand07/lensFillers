@@ -11,10 +11,7 @@ const WeddingAlbums = () => {
       try {
         console.log("we are fetching photos")
         const response = await axios.get("https://lensfillers.onrender.com/api/albums");
-        console.log(response.data)
-        console.log(response)
         setAlbums(response.data.albums);
-        console.log(response.data.albums);
       } catch (error) {
         console.error("Error fetching albums:", error);
       }
