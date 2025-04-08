@@ -15,7 +15,7 @@ const AlbumDetails = () => {
     const fetchAlbum = async () => {
       try {
         const response = await axios.get(
-          `https://lens-fillers.vercel.app/api/albums/${albumId}`
+          `https://lensfillers.onrender.com/api/albums/${albumId}`
         );
         setAlbum(response.data);
       } catch (error) {

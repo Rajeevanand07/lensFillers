@@ -31,7 +31,7 @@ const EditAlbum = () => {
       try {
         setLoading(true);
         const response = await axios.get(
-          `https://lens-fillers.vercel.app/api/albums/${id}`
+          `https://lensfillers.onrender.com/api/albums/${id}`
         );
         setAlbum(response.data);
         setLoading(false);
@@ -68,7 +68,7 @@ const EditAlbum = () => {
     if (album.venue) formData.append("venue", album.venue);
 
     try {
-      await axios.patch(`https://lens-fillers.vercel.app/api/albums/${id}`, formData, {
+      await axios.patch(`https://lensfillers.onrender.com/api/albums/${id}`, formData, {
         headers: { "Content-Type": "multipart/form-data" },
         withCredentials: true,
       });

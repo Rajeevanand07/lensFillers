@@ -9,7 +9,7 @@ export default function VideoAlbums() {
   useEffect(() => {
     const fetchVideoAlbums = async () => {
       try {
-        const response = await axios.get("https://lens-fillers.vercel.app/api/albums");
+        const response = await axios.get("https://lensfillers.onrender.com/api/albums");
         setVideoAlbums(response.data);
         console.log(response.data);
         

@@ -15,7 +15,7 @@ const AdminPanel = () => {
   const fetchAlbums = async () => {
     try {
       axios.defaults.withCredentials = true;
-      const response = await axios.get("https://lens-fillers.vercel.app/api/albums");
+      const response = await axios.get("https://lensfillers.onrender.com.app/api/albums");
       setAlbums(response.data);
     } catch (error) {
       console.error(error);
@@ -28,7 +28,7 @@ const AdminPanel = () => {
     if (window.confirm("Are you sure you want to delete this album?")) {
       try {
         const response = await axios.delete(
-          `https://lens-fillers.vercel.app/api/albums/${id}`
+          `https://lensfillers.onrender.com/api/albums/${id}`
         );
         alert(response.data.message);
         setAlbums((prev) => prev.filter((album) => album._id !== id));
@@ -56,7 +56,7 @@ const AdminPanel = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.post('https://lens-fillers.vercel.app/api/auth/logout', {}, { withCredentials: true });
+      await axios.post('https://lensfillers.onrender.com/api/auth/logout', {}, { withCredentials: true });
       toast.success('Logged out successfully');
       localStorage.removeItem('token');
       navigate('/admin/login');
