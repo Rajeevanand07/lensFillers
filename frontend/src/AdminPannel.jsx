@@ -16,7 +16,8 @@ const AdminPanel = () => {
     try {
       axios.defaults.withCredentials = true;
       const response = await axios.get("https://lensfillers.onrender.com/api/albums");
-      setAlbums(response.data);
+      console.log(response)
+      setAlbums(response.data.albums);
     } catch (error) {
       console.error("Error fetching albums:", error);
     } finally {
@@ -102,7 +103,7 @@ const AdminPanel = () => {
         </div>
       </div>
       <div className="album-grid-a">
-        {albums.length === 0 ? (
+        {albums?.length === 0 ? (
           <p>No albums found</p>
         ) : (
          albums && albums?.map((album, index) => (
