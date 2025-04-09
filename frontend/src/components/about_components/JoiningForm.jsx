@@ -67,7 +67,7 @@ const JoiningForm = () => {
     if (validateForm()) {
       setLoading(true); // 🔹 Set loading state to true
       try {
-        await axios.post("http://localhost:3000/api/join", formData);
+        await axios.post("https://lensfillers.onrender.com/api/join", formData);
         toast.success("Message sent successfully!");
 
         setFormData({

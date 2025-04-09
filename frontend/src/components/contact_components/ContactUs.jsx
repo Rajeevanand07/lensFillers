@@ -60,7 +60,7 @@ const ContactUs = () => {
 
       setLoading(true);
       try {
-        await axios.post("http://localhost:3000/api/contact", formData);
+        await axios.post("https://lensfillers.onrender.com/api/contact", formData);
         toast.success("Message sent successfully!");
 
 
