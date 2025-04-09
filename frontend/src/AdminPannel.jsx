@@ -16,7 +16,6 @@ const AdminPanel = () => {
     try {
       axios.defaults.withCredentials = true;
       const response = await axios.get("https://lensfillers.onrender.com/api/albums");
-      console.log(response)
       setAlbums(response.data.albums);
     } catch (error) {
       console.error("Error fetching albums:", error);
