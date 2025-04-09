@@ -64,7 +64,7 @@
 .cinema_description p{
     font-size: 0.8rem;
     letter-spacing: 0.1em;
-    font-family: 'muli';
+    font-family: 'Mulish';
     font-weight: 600;
     /* padding: 1rem 2rem; */
 }
@@ -79,7 +79,7 @@
 .nv_span {
     font-size: 0.8rem;
     cursor: pointer;
-    font-family: 'muli';
+    font-family: 'Mulish';
     font-weight: 300;
     letter-spacing: 0.1em;
     border-bottom: 1px solid black;

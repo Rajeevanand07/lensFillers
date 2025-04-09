@@ -1,8 +1,4 @@
-@font-face {
-  font-family: 'muli';
-  src: url('../assets/7Auwp_0qiz-afTLGLQ.woff2') format('woff2');
-  font-display: swap;
-}
+
 .about_section{
   display: flex;
   flex-direction: column;

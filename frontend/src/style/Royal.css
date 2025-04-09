@@ -142,11 +142,12 @@
     margin-top: 50px;
     justify-content: flex-start;
     align-items: center;
-    font-family: 'muli';
+    font-family: 'Mulish';
     text-transform: uppercase;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
 }
 .royal_stroy_l h5, .royal_stroy_r h5{
+    font-weight: 400;
     width: 55%;
 }
 .royal_stroy_r{
@@ -155,10 +156,14 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 1.5vw;
+    font-family: 'Mulish';
+    font-size: 1.4vw;
     margin-bottom: 60px;
 
 }
+/* .royal_hands{
+    top: 20%;
+} */
 @media (max-width: 425px) {
     .royal_side_content .upper_royal{
         justify-content: center;

@@ -138,7 +138,7 @@
     bottom: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Cormorant Garamond italic';
+    font-family: 'Cormorant Garamond';
     font-style: italic;
     /* letter-spacing: 0.1em; */
 }

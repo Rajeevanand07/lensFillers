@@ -1,7 +1,4 @@
-@font-face {
-  font-family: 'muli';
-  src: url('../assets/7Auwp_0qiz-afTLGLQ.woff2');
-}
+
 
 .main_navbar {
   position: fixed;
@@ -11,7 +8,7 @@
   color: #FBFAFA;
   height: 9vh;
   z-index: 12;
-  font-family: 'muli';
+  font-family: 'Mulish';
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,7 +88,7 @@
   background-color: black;
   z-index: 99;
   padding: 2rem;
-  font-family: 'muli';
+  font-family: 'Mulish';
   overflow: hidden;
 }
 .nav_side ul{
