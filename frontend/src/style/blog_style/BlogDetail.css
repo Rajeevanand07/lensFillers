@@ -35,7 +35,7 @@ body{
 }
 
 .date {
-  font-family: "Muli", sans-serif;
+  font-family: "Mulish", serif;
   font-style: normal;
   font-weight: 400;
   color: rgb(132, 132, 124);
@@ -62,6 +62,7 @@ body{
   text-align: justify;
   line-height: 1.6;
   color: #333;
+  font-family: 'Mulish', serif;
 }
 
 blockquote{
@@ -147,7 +148,7 @@ blockquote{
   letter-spacing: 2px;
   color: rgb(132, 132, 124);
   line-height: 25px;
-  font-family: "Muli", sans-serif;
+  font-family: "Mulish", serif;
   font-style: normal;
 }
 .comment-list p{
@@ -156,7 +157,7 @@ blockquote{
   margin-bottom: 15px;
   letter-spacing: 1px;
   color: rgb(132, 132, 124);
-  font-family: "Muli", sans-serif;
+  font-family: "Mulish", serif;
   font-style: normal;
 }
 /* Single Comment */
@@ -183,7 +184,7 @@ blockquote{
 
 /* User Info */
 .comment-content strong {
-  font-family: "Muli", sans-serif;
+  font-family: "Mulish", serif;
   font-style: normal;
   font-weight: 500;
   color: rgb(26, 26, 25);
@@ -240,7 +241,7 @@ blockquote{
   margin: 10px 0 5px;
   text-transform: uppercase;
   color: rgb(77, 80, 74);
-  font-family: "Muli", sans-serif;
+  font-family: "Mulish", sans-serif;
   letter-spacing: 2px;
   text-align: left;
   font-style: normal;
@@ -255,7 +256,7 @@ blockquote{
   border-bottom: 1px solid #ccc;
   padding: 10px;
   outline: none;
-  font-family: "Muli", sans-serif;
+  font-family: "Mulish", serif;
   font-style: normal;
   font-weight: 300;
   color: rgb(132, 132, 124);
@@ -294,7 +295,7 @@ blockquote{
 }
 
 .comment-checkbox label {
-  font-family: "Muli", sans-serif;
+  font-family: "Mulish", serif;
   font-style: normal;
   font-weight: 300;
   color: rgb(132, 132, 124);
@@ -383,6 +384,7 @@ blockquote{
 
   .date{
     font-size: 13px;
+    margin-top: 10vh;
   }
 
   blockquote{

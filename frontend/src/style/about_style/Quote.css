@@ -12,7 +12,7 @@
 .main_quote p{
   font-size: 1.3vw;
   font-weight: 600;
-  font-family: 'muli', serif;
+  font-family: 'Mulish', serif;
   text-align: center;
   text-transform: uppercase;
 
@@ -29,14 +29,15 @@
   text-align: center;
   /* text-transform: capitalize; */
   /* letter-spacing: 0.1em; */
-  font-weight: 500;
+  font-weight: 300;
   font-family: 'Cormorant Garamond', serif;
+  text-transform: capitalize;
 }
 .quote_cover p{
   margin-top: 5vh;
   font-size: 1.2vw;
   font-weight: 300;
-  font-family: 'muli', serif;
+  font-family: 'Mulish', serif;
   text-transform: lowercase;
   text-align: center;
 }

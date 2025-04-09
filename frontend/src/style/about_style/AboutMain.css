@@ -50,7 +50,7 @@
 .about_director p{
   font-size: 1.5vw;
   font-weight: 300;
-  font-family: 'muli', serif;
+  font-family: 'Mulish', serif;
   text-align: center;
 }
 .we_are{
@@ -68,7 +68,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'muli', serif;
+  font-family: 'Mulish', serif;
   font-weight: 300;
 }
 @media (max-width: 500px) {

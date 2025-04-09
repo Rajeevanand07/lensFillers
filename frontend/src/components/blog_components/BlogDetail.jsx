@@ -144,10 +144,8 @@ const BlogDetail = () => {
 
         {/* Comments Section */}
         <section className="comment-list">
-          <h2>Comments</h2>
-          {comments.length === 0 ? (
-            <p>No comments yet. Be the first to comment!</p>
-          ) : (
+          {/* <h2>Comments</h2> */}
+          {comments.length === 0 ? 
             comments.map((cmt, index) => (
               <div key={index} className={`comment-item ${index % 2 === 0 ? "comment-left" : "comment-right"}`}>
                 <div className="comment-content">
@@ -157,11 +155,13 @@ const BlogDetail = () => {
                 </div>
               </div>
             ))
+          : (
+            <p>No comments yet. Be the first to comment!</p>
           )}
         </section>
 
         {/* Comment Form */}
-        <section className="comment-section">
+        {/* <section className="comment-section">
           <h2>Post a Comment</h2>
           <form onSubmit={handleSubmit} className="comment-form">
             <label>Your Comment</label>
@@ -179,7 +179,7 @@ const BlogDetail = () => {
 
             <button type="submit">Submit</button>
           </form>
-        </section>
+        </section> */}
       </article>
     </div>
   );

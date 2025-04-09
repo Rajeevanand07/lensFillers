@@ -165,7 +165,7 @@
   }
 
   .wedding-memories-description {
-    padding: 20px 200px;
+    padding: 20px 20px;
   }
 
   .popup-content-albumDetail {
@@ -200,10 +200,6 @@
 
   .gallery-container-albumDetail {
     columns: 2;
-  }
-
-  .wedding-memories-description {
-    padding: 20px 160px;
   }
 
   .popup-content-albumDetail {
